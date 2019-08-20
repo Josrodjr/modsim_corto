@@ -1,18 +1,17 @@
 import math
-import random
+from random import random
 
 # Integral (lambda(2 parameters), int)
-# returns: float con resultado de la doble integral de legal
-# funcion dada.
+# returns: float con resultado de la doble integral de la funcion dada.
 def doble_integral(funcion, repeticiones):
     result = 0
     for i in range(1,repeticiones):
-        result += funcion(random.random(),random.random())/i
+        result += funcion(random(),random())/repeticiones
 
     return result;
 
 # Funcion g(x,y)
-g = lambda x, y: (math.e ** -(x ** 2 + 1/y - 1)) * (x / y ** 2)
+g = lambda x, y: (math.e ** -(x ** 2 + 1/y - 1)) * (x/ y ** 2)
 
 # Resultados
 print("Resultados de Integracion de g(x,y):")
