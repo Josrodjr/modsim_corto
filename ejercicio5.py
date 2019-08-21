@@ -11,7 +11,7 @@ def doble_integral(funcion, repeticiones):
     return result;
 
 # Funcion g(x,y)
-g = lambda x, y: (math.e ** -(x ** 2 + 1/y - 1)) * (x/ y ** 2)
+g = lambda x, y: ((1/x - 1) * math.e ** -((1/x - 1) * (y + 1))) / x ** 2
 
 # Resultados
 print("Resultados de Integracion de g(x,y):")
