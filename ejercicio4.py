@@ -3,8 +3,6 @@ import random
 
 # evaluated montecarlo function in a single point
 def evaluated_func(x):
-    # esto es lo que esta malo
-    # return math.e ** (-1 * (x ** 2))
     return 2 * math.e ** (-1 * (1/x - 1)**2)/(x ** 2) 
 
 # get a uniform random in the given inverval
